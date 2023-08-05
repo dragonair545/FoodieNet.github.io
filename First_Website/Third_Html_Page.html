@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>      
+
+<head>
+    <title> All about Butter Chicken </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="provided.css">
+</head>
+
+
+<body>
+    <h2 id="label">
+        All about Butter Chicken
+    </h2>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="First_HTML_PAGE.html">Butter Chicken</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link" href="Second_HTML_PAGE.html">Tandoori Chicken</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Third_HTML_PAGE.html">Chicken Tikka</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Fourth_HTML_PAGE.html">Naan</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <!-- Black background with white text -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">...</nav>
+        <div class="row">
+            <div class="col-sm-8">  <p class="Description">
+                Butter Chicken is a popular Indian dish consisting of chicken in a buttery sauce.
+            </p>
+        
+            <p class="Description">
+                It is very popular everywhere and originates from Delhi when leftover tandoori chicken 
+            </p>
+            <p class="Description">
+                was mixed with in a butter-rich tomato gravy. Butter chicken also has many variations.
+            </p>
+            <p class="Description">
+                For example, there is such a thing as butter chicken pizza! Not only that, it is used as fillings in: 
+            </p>
+            <p>
+                poutine, wraps, roti, and rolls, along with pie!
+            </p>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://media.istockphoto.com/id/618457124/photo/butter-chicken-served-with-homemade-indian-naan-bread.jpg?s=612x612&w=0&k=20&c=7FoiHoDtocfPvQIaRFfFani4e5lkfMTNl_619rTTh4g=" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.simplyrecipes.com/thmb/-QzmQynep4nIQ3tncO0v3_xpPd0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__01__Butter-Chicken-LEAD-2-6ca76f24bbe74114a09958073cb9c76f.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1312459972/photo/homemade-indian-butter-chicken-with-rice.jpg?s=612x612&w=0&k=20&c=QJcSuJJuusJh1sWpW-l6BNHVlUlodVwO-gtcRrYgHj8=" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <p>
+            <a class="btn btn-primary"
+                href="https://en.wikipedia.org/wiki/Butter_chicken"
+                    role="button">Read more about Butter Chicken!</a></p>
+
+                </div>
+                <div class="col-sm-4"> 
+        
+            <p>
+                <div class="recipe">
+                    <p id="recipe-title">
+                        Here is how to make Butter Chicken!
+                    </p>
+                    <h3> First, Tell us how many breasts of chicken you have, we will 
+                        proportion the recipe for you, this bottom one is with 3 breasts.
+                    </h3>
+                    <input type="number" id="myText" value="# of chicken pieces?">
+                    <p> Click the button and we will calculate!</p>
+
+                    <button onclick="changeRecipe()"> Click here! </button>
+                    <script>
+                    function changeRecipe() {
+                       var x = document.getElementById("myText").value;
+                        x = x/3
+                        var Oil = 1 * x
+                        var Butter = 1 * x
+                        var Onion = 1 * x
+                        var Ginger = 1 * x
+                        var Garlic = 2 * x
+                        var Chicken = 3 * x
+                        var Tomato_Paste = 4 * x
+                        var Garam_Masala = 1 * x
+                        var Chili_Powder = 1 * x
+                        var Fenugreek = 1 * x
+                        var Cumin = 1 * x
+                        var Salt = 1 * x
+                        var Black_Pepper = 1/4 * x
+                        var Heavy_Cream = 1 * x
+                        document.getElementById("oil").innerHTML = Oil + " tbsp"
+                        document.getElementById("butter").innerHTML = Butter + " tbsp"
+                        document.getElementById("onion").innerHTML = Onion + " medium-sized one"
+                        document.getElementById("ginger").innerHTML = Ginger + " teaspoon(mince it)"
+                        document.getElementById("garlic").innerHTML = Garlic + " cloves(crush it)"
+                        document.getElementById("chicken").innerHTML = Chicken + " chicken breasts(cut into 3/4 inch hunks)"
+                        document.getElementById("tomato").innerHTML = Tomato_Paste + " tbsp(or an 8oz can for every 4 tbsp)"
+                        document.getElementById("garam").innerHTML = Garam_Masala + " tbsp"
+                        document.getElementById("chili").innerHTML = Chili_Powder + " teaspoon"
+                        document.getElementById("fenugreek").innerHTML = Fenugreek + " teaspoon"
+                        document.getElementById("cumin").innerHTML = Cumin + " teaspoon"
+                        document.getElementById("salt").innerHTML = Salt + " teaspoon"
+                        document.getElementById("black_pepper").innerHTML = Black_Pepper + " teaspoon"
+                        document.getElementById("heavy_cream").innerHTML = Heavy_Cream + " cup"
+                    }
+                    </script>
+                    <h2> Measurements for cooking:</h2>
+                    <table>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Quantity</th>
+                        </tr>
+                        <tr>
+                            <td> Oil</td>
+                            <td id="oil"> 1 tbsp</td>
+                        </tr>
+                        <tr>
+                            <td> Butter </td>
+                            <td id="butter"> 1 tbsp </td>
+                        <tr>
+                        <tr>
+                            <td> Onion(Diced) </td>
+                            <td id="onion"> 1 medium one</td>
+                        </tr>
+                         <tr>
+                            <td> Ginger</td>
+                            <td id="ginger"> 1 teaspoon(Minced)</td>
+                         </tr> 
+                            
+                         <tr>
+                            <td> Garlic</td>
+                            <td id="garlic"> 2 cloves(Crushed)</td>
+                         </tr>
+                         <tr>
+                            <td> Chicken Breasts</td>
+                            <td id="chicken"> 3 pieces(Cut into 3/4 inch chunks)</td>
+                         </tr>
+                         <tr> 
+                            <td> Tomato Paste</td>
+                            <td id="tomato"> 4 tbsp (1 8oz can)</td>
+                         </tr>
+                         <tr>
+                            <td> Garam Masala</td>
+                            <td id="garam"> 1 tbsp</td>
+                         </tr>
+                         <tr>
+                            <td> Chili powder</td>
+                            <td id="chili"> 1 teaspoon</td>
+                         </tr>
+                         <tr>
+                            <td> Fenugreek</td>
+                            <td id="fenugreek"> 1 teaspoon</td>
+                         </tr>
+                         <tr>
+                            <td> Cumin</td>
+                            <td id="cumin"> 1 teaspoon</td>
+                         </tr>
+                         <tr>
+                            <td> Salt</td>
+                            <td id="salt"> 1 teaspoon</td>
+                         </tr>
+                         <tr>
+                            <td> Black Pepper</td>
+                            <td id="black_pepper"> 1/4 teaspoon</td>
+                         </tr>
+                         <tr>
+                            <td> Heavy Cream</td>
+                            <td id="heavy_cream"> 1 cup</td>
+                         </tr>
+                          
+                        
+            
+                        
+                        </table>
+                        <p>
+                            1.Heat a large skillet or medium saucepan over medium-high heat. Add the oil, butter, and onions and cook onions down until lightly golden, about 3-4 minutes. Add ginger and garlic and let it cook for 30 seconds, stirring so it doesn't burn.
+                            </p>
+                        <p>
+                            2.Add the chicken, tomato paste, and spices. Cook for 5-6 minutes or until everything is cooked through.
+                            </p>
+                        <p>
+                            3.Add the heavy cream and simmer for 8-10 minutes stirring occasionally. Serve over Basmati rice or with naan.
+                            </p>
+
+                </div>
+            </p>
+        </div>
+    
+       
+        
+        </div>
+        
+          
+       
+    
+</body>
+
+
+</html>
